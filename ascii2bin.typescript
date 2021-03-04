@@ -1,0 +1,23 @@
+Script started on Wed 03 Mar 2021 10:34:59 PM PST
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ asc[K[K[Kascii2bin
+0101
+5
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ cat 54356.txt  | ./ascii2bin ; echo $?
+54356
+0
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ cat 138.txt | ./ascii2bin ; echo $?
+138
+0
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ cat 2863311530.txt | ./ascii2bin ; echo $?
+2863311530
+0
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ cat 4294967295.txt | ./ascii2bin ; echo $?
+4294967295
+0
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ cat error.txt | ./ascii2bin ; echo $?
+Error: A non-binary number was detected.
+1
+]0;nab89727@ssh: ~/comp122/ascii2bin[01;32mnab89727@ssh[00m:[01;34m~/comp122/ascii2bin[00m$ exit
+exit
+
+Script done on Wed 03 Mar 2021 10:35:46 PM PST
