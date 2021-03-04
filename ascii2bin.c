@@ -17,13 +17,13 @@ int main (int argc, char * argv[], char ** envp) {
 	   number = (number << 1) + digit;
 	   retval = read(0, &ascii_value, 1);
 	}else{
-		//Validation Failed, Go to Validation 2 or EOF
+		//Validation Failed or EOF, Go to Validation 2
 		break;
 	}		
  }
  
- //Validation 2 (Checking Validation Fail Reason)
-if(ascii_value == 0x30 || ascii_value == 0x31 || ascii_value == 0x0a ){
+ //Validation 2 (Checking Validation 1 Fail Reason)
+if(ascii_value == 0x30 || ascii_value == 0x31 || ascii_value == 0x0a || ascii_value == 0x4c46 || ascii_value == 0x6e6c || ascii_value == 0x6e65776c696e65){
 	//Successful conversion
 	printf("%u\n", number);
     return 0;
